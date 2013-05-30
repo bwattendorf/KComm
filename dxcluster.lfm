@@ -1,0 +1,502 @@
+object frmClusterClient: TfrmClusterClient
+  Left = 324
+  Height = 586
+  Top = 136
+  Width = 400
+  ActiveControl = sgCluster
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'DX Cluster'
+  ClientHeight = 586
+  ClientWidth = 400
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  ShowInTaskBar = stAlways
+  LCLVersion = '0.9.28.2'
+  object sgCluster: TStringGrid
+    Left = 8
+    Height = 308
+    Top = 8
+    Width = 384
+    AutoEdit = False
+    DefaultRowHeight = 19
+    FixedCols = 0
+    Flat = True
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goScrollKeepVisible]
+    RowCount = 1
+    TabOrder = 0
+    OnClick = sgClusterClick
+    OnDblClick = sgClusterDblClick
+    ColWidths = (
+      58
+      61
+      58
+      147
+      43
+    )
+    Cells = (
+      5
+      0
+      0
+      'de'
+      1
+      0
+      'DX'
+      2
+      0
+      'Freq'
+      3
+      0
+      'Comment'
+      4
+      0
+      'Time'
+    )
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 236
+    Top = 320
+    Width = 384
+    Caption = ' Filters '
+    ClientHeight = 218
+    ClientWidth = 380
+    TabOrder = 1
+    object GroupBox2: TGroupBox
+      Left = 6
+      Height = 96
+      Top = 1
+      Width = 368
+      Caption = ' By Band '
+      ClientHeight = 78
+      ClientWidth = 364
+      TabOrder = 0
+      object cbAllBands: TCheckBox
+        Left = 6
+        Height = 19
+        Top = 9
+        Width = 80
+        AutoSize = False
+        Caption = 'All bands'
+        Checked = True
+        OnClick = cbAllBandsClick
+        State = cbChecked
+        TabOrder = 0
+      end
+      object cb160m: TCheckBox
+        Left = 6
+        Height = 19
+        Top = 25
+        Width = 80
+        AutoSize = False
+        Caption = '160m'
+        OnClick = cbBandFilterClick
+        TabOrder = 1
+      end
+      object cb80m: TCheckBox
+        Left = 6
+        Height = 19
+        Top = 41
+        Width = 80
+        AutoSize = False
+        Caption = '80m'
+        OnClick = cbBandFilterClick
+        TabOrder = 2
+      end
+      object cb60m: TCheckBox
+        Left = 6
+        Height = 19
+        Top = 57
+        Width = 80
+        AutoSize = False
+        Caption = '60m'
+        OnClick = cbBandFilterClick
+        TabOrder = 3
+      end
+      object cb40m: TCheckBox
+        Left = 94
+        Height = 19
+        Top = 9
+        Width = 80
+        AutoSize = False
+        Caption = '40m'
+        OnClick = cbBandFilterClick
+        TabOrder = 4
+      end
+      object cb30m: TCheckBox
+        Left = 94
+        Height = 19
+        Top = 25
+        Width = 80
+        AutoSize = False
+        Caption = '30m'
+        OnClick = cbBandFilterClick
+        TabOrder = 5
+      end
+      object cb20m: TCheckBox
+        Left = 94
+        Height = 19
+        Top = 41
+        Width = 80
+        AutoSize = False
+        Caption = '20m'
+        OnClick = cbBandFilterClick
+        TabOrder = 6
+      end
+      object cb17m: TCheckBox
+        Left = 94
+        Height = 19
+        Top = 57
+        Width = 80
+        AutoSize = False
+        Caption = '17m'
+        OnClick = cbBandFilterClick
+        TabOrder = 7
+      end
+      object cb15m: TCheckBox
+        Left = 174
+        Height = 19
+        Top = 9
+        Width = 80
+        AutoSize = False
+        Caption = '15m'
+        OnClick = cbBandFilterClick
+        TabOrder = 8
+      end
+      object cb12m: TCheckBox
+        Left = 174
+        Height = 19
+        Top = 25
+        Width = 80
+        AutoSize = False
+        Caption = '12m'
+        OnClick = cbBandFilterClick
+        TabOrder = 9
+      end
+      object cb10m: TCheckBox
+        Left = 174
+        Height = 19
+        Top = 41
+        Width = 80
+        AutoSize = False
+        Caption = '10m'
+        OnClick = cbBandFilterClick
+        TabOrder = 10
+      end
+      object cb6m: TCheckBox
+        Left = 174
+        Height = 19
+        Top = 57
+        Width = 80
+        AutoSize = False
+        Caption = '6m'
+        OnClick = cbBandFilterClick
+        TabOrder = 11
+      end
+      object cb4m: TCheckBox
+        Left = 254
+        Height = 19
+        Top = 9
+        Width = 80
+        AutoSize = False
+        Caption = '4m'
+        OnClick = cbBandFilterClick
+        TabOrder = 12
+      end
+      object cb2m: TCheckBox
+        Left = 254
+        Height = 19
+        Top = 25
+        Width = 80
+        AutoSize = False
+        Caption = '2m'
+        OnClick = cbBandFilterClick
+        TabOrder = 13
+      end
+      object cb70cm: TCheckBox
+        Left = 254
+        Height = 19
+        Top = 41
+        Width = 80
+        AutoSize = False
+        Caption = '70cm'
+        OnClick = cbBandFilterClick
+        TabOrder = 14
+      end
+    end
+    object GroupBox3: TGroupBox
+      Left = 6
+      Height = 50
+      Top = 104
+      Width = 368
+      Caption = 'By Mode '
+      ClientHeight = 32
+      ClientWidth = 364
+      TabOrder = 1
+      object cbAllModes: TCheckBox
+        Left = 6
+        Height = 19
+        Top = 10
+        Width = 80
+        AutoSize = False
+        Caption = 'All modes'
+        Checked = True
+        OnClick = cbAllModesClick
+        State = cbChecked
+        TabOrder = 0
+      end
+      object cbCW: TCheckBox
+        Left = 94
+        Height = 19
+        Top = 10
+        Width = 80
+        AutoSize = False
+        Caption = 'CW'
+        OnClick = cbModeFilterClick
+        TabOrder = 1
+      end
+      object cbData: TCheckBox
+        Left = 174
+        Height = 19
+        Top = 10
+        Width = 80
+        AutoSize = False
+        Caption = 'Data'
+        OnClick = cbModeFilterClick
+        TabOrder = 2
+      end
+      object cbSSB: TCheckBox
+        Left = 254
+        Height = 19
+        Top = 10
+        Width = 80
+        AutoSize = False
+        Caption = 'Phone'
+        OnClick = cbModeFilterClick
+        TabOrder = 3
+      end
+    end
+    object GroupBox4: TGroupBox
+      Left = 6
+      Height = 54
+      Top = 161
+      Width = 368
+      Caption = ' By Region '
+      ClientHeight = 36
+      ClientWidth = 364
+      TabOrder = 2
+      object Label1: TLabel
+        Left = 98
+        Height = 14
+        Top = 10
+        Width = 31
+        Caption = 'Within'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 206
+        Height = 14
+        Top = 10
+        Width = 14
+        Caption = 'km'
+        ParentColor = False
+      end
+      object cbAllSpots: TCheckBox
+        Left = 8
+        Height = 21
+        Top = 7
+        Width = 80
+        AutoSize = False
+        Caption = 'All spots'
+        Checked = True
+        OnClick = cbAllSpotsClick
+        State = cbChecked
+        TabOrder = 0
+      end
+      object seDistance: TSpinEdit
+        Left = 146
+        Height = 21
+        Top = 7
+        Width = 56
+        Increment = 100
+        MaxValue = 4000
+        MinValue = 100
+        TabOrder = 1
+        Value = 500
+      end
+    end
+  end
+  object pnStatusBar: TPanel
+    Left = 0
+    Height = 24
+    Top = 562
+    Width = 400
+    Align = alBottom
+    Alignment = taLeftJustify
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    BorderWidth = 2
+    ClientHeight = 24
+    ClientWidth = 400
+    TabOrder = 2
+    object StatusBar: TLabel
+      Left = 8
+      Height = 15
+      Top = 5
+      Width = 316
+      AutoSize = False
+      ParentColor = False
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object btnPin: TSpeedButton
+      Left = 322
+      Height = 18
+      Hint = 'Pin window in front'
+      Top = 3
+      Width = 20
+      Color = clBtnFace
+      Flat = True
+      Glyph.Data = {
+        36050000424D3605000000000000360400002800000010000000100000000100
+        08000000000000010000130B0000130B0000000100000000000008077E00908B
+        CC0054528C00C9CAD7003834B000ECECF2000808E700FBFDFB001C17DF007478
+        B000A6A8CA00E0E1F4007476E7003133DD00B4B5C900514ECC00000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000070707070707
+        070707070707070707070707070707070707070707050B070707070707070707
+        070707070703070707070707070707070707070703030707070707070707070E
+        030707050A070707070707070707070F00090B0E05070707070707070707070D
+        0600020A07070707070707070707070C0606060001070707070707070707050D
+        0606060600010707070707070707010606060D0F0905070707070707070B0806
+        06040B0707070707070707070A0C0D0608030707070707070707070E0606080D
+        0A07070707070707070707070C06060F05070707070707070707070707010D04
+        0707070707070707070707070707050B07070707070707070707
+      }
+      Layout = blGlyphRight
+      NumGlyphs = 0
+      OnClick = btnPinClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object btnShowMsg: TSpeedButton
+      Left = 358
+      Height = 18
+      Hint = 'Show login message from cluster'
+      Top = 3
+      Width = 20
+      Color = clBtnFace
+      Enabled = False
+      Flat = True
+      Glyph.Data = {
+        36020000424D3602000000000000360000002800000010000000100000000100
+        1000000000000002000064000000640000000000000000000000100284100821
+        0821082108210821082108210821082108210821082108211002100208217B6F
+        7B6F7B6F7B6F7B6F7B6F7B6F7B6F7B6F7B6F7B6F8C310821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7F7B6F7B6FFF7FFF7FFF7F8C310821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FB5772A47732DFF7FFF7F8C310821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7F736FF05E732D7B5F8C310821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7F2D57511904024A190821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F734E131180010811100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F734E13110402840010020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F524A1311000110020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F8C3110428B1010020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F8C310821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F8C310821100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FF75E8C318C31C6188410100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FEF3D1863CE1900001002100210020821FF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FEF3D524A0000100210021002100284100821
+        0821082108210821082108210821841000001002100210021002
+      }
+      Layout = blGlyphRight
+      NumGlyphs = 0
+      OnClick = btnShowMsgClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object btnChat: TSpeedButton
+      Left = 340
+      Height = 18
+      Hint = 'Send a spot to the cluster'
+      Top = 3
+      Width = 20
+      Color = clBtnFace
+      Enabled = False
+      Flat = True
+      Glyph.Data = {
+        36020000424D3602000000000000360000002800000010000000100000000100
+        1000000000000002000064000000640000000000000000000000FF7FFF7FFF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+        BD77071D6C31F75EFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+        FF7F18632925AD356C31BD77FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+        FF7FFF7FEE398C31734E4B2DDE7BFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+        186310422925EF3DF75E734EEF3D324AB5569C73FF7FFF7FFF7FFF7F9C736B2D
+        4A29524A934E186318631863F75E7452524A8C31524AFF7FFF7FBD770821524A
+        5A6B5A6B5A6B5A6B5A6B5A6B5A6B5A6B1863F04131468C31FF7FEF3D10427B6F
+        7B6F7B6F7B6F7B6F7B6F7B6F7B6F7B6F7B6FD75EEF3DEF3D3146082118639C73
+        9C739C739C739C739C739C739C739C739C737C731042524A0821E71C5B6FBD77
+        BD77BD77BD77BD77BD77BD77BD77BD77BD77BD77524A734EC6186B2D1967DE7B
+        DE7BDE7BDE7BDE7BDE7BDE7BDE7BDE7BDE7B9D77314631466B2DB556AD35DE7B
+        DE7BDE7BDE7BDE7BDE7BDE7BDE7BDE7BDE7BD65A734E29251863FF7FEF3D3146
+        BD77FF7FFF7FFF7FFF7FFF7FFF7FDF7F1967734E6B2D734EFF7FFF7FFF7F734E
+        8B2DF8629C73DE7BDE7BDE7B7B6FD75EEF3D8C313863FF7FFF7FFF7FFF7FFF7F
+        BD77945231463146524A3146104251461863FF7FFF7FFF7FFF7FFF7FFF7FFF7F
+        FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+      }
+      Layout = blGlyphRight
+      NumGlyphs = 0
+      OnClick = btnChatClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object btnFilters: TButton
+      Left = 376
+      Height = 18
+      Top = 3
+      Width = 20
+      Caption = 'v'
+      Font.Height = -8
+      Font.Style = [fsBold]
+      OnClick = btnFiltersClick
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+  end
+  object Timer: TTimer
+    Enabled = False
+    OnTimer = TimerTimer
+    left = 56
+    top = 168
+  end
+end

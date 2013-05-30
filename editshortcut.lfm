@@ -1,0 +1,74 @@
+object frmShortcut: TfrmShortcut
+  Left = 291
+  Height = 116
+  Top = 149
+  Width = 340
+  HorzScrollBar.Page = 339
+  VertScrollBar.Page = 115
+  ActiveControl = edName
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Shortcut'
+  ClientHeight = 116
+  ClientWidth = 340
+  Position = poMainFormCenter
+  object Label1: TLabel
+    Left = 17
+    Height = 14
+    Top = 16
+    Width = 32
+    Caption = 'Name:'
+    ParentColor = False
+    ParentFont = True
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 14
+    Top = 46
+    Width = 52
+    Caption = 'Command:'
+    ParentColor = False
+    ParentFont = True
+  end
+  object edName: TEdit
+    Left = 80
+    Height = 23
+    Hint = '25'
+    Top = 14
+    Width = 120
+    ParentFont = True
+    TabOrder = 0
+  end
+  object edCommand: TEdit
+    Left = 80
+    Height = 23
+    Top = 44
+    Width = 240
+    OnKeyUp = edCommandKeyUp
+    ParentFont = True
+    TabOrder = 1
+  end
+  object btnOK: TButton
+    Left = 157
+    Height = 25
+    Top = 80
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    ParentFont = True
+    TabOrder = 2
+  end
+  object btnCancel: TButton
+    Left = 245
+    Height = 25
+    Top = 80
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Cancel'
+    ModalResult = 2
+    ParentFont = True
+    TabOrder = 3
+  end
+end

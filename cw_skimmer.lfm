@@ -1,0 +1,27 @@
+object frmSkimmer: TfrmSkimmer
+  Left = 0
+  Height = 29
+  Top = 0
+  Width = 303
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsToolWindow
+  Caption = 'CW Skimmer Interface'
+  ClientHeight = 29
+  ClientWidth = 303
+  OnClose = FormClose
+  LCLVersion = '0.9.28.2'
+  object lbStatus: TLabel
+    Left = 10
+    Height = 14
+    Top = 8
+    Width = 1
+    ParentColor = False
+  end
+  object Timer: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = TimerTimer
+    left = 193
+    top = 2
+  end
+end

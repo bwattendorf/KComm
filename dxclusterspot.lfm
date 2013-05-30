@@ -1,0 +1,112 @@
+object frmClusterSpot: TfrmClusterSpot
+  Left = 318
+  Height = 112
+  Top = 149
+  Width = 280
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Send Spot'
+  ClientHeight = 112
+  ClientWidth = 280
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  ParentFont = False
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.26'
+  object Label11: TLabel
+    Left = 8
+    Height = 14
+    Top = 6
+    Width = 23
+    Caption = 'Freq'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 72
+    Height = 14
+    Top = 6
+    Width = 18
+    Caption = 'Call'
+    ParentColor = False
+  end
+  object Label13: TLabel
+    Left = 144
+    Height = 14
+    Top = 6
+    Width = 46
+    Caption = 'Comment'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 14
+    Top = 52
+    Width = 120
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Propagation mode:'
+    ParentColor = False
+  end
+  object edFreq: TEdit
+    Left = 8
+    Height = 22
+    Top = 20
+    Width = 56
+    OnChange = edFreqChange
+    TabOrder = 0
+  end
+  object edCall: TEdit
+    Left = 72
+    Height = 22
+    Top = 20
+    Width = 64
+    OnKeyPress = edCallKeyPress
+    TabOrder = 1
+  end
+  object edComment: TEdit
+    Left = 144
+    Height = 22
+    Top = 20
+    Width = 128
+    TabOrder = 2
+  end
+  object btnSend: TButton
+    Left = 48
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Send'
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object btnCancel: TButton
+    Left = 160
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object cbPropMode: TComboBox
+    Left = 144
+    Height = 21
+    Top = 48
+    Width = 128
+    ItemHeight = 13
+    Items.Strings = (
+      'n/a'
+      'Auroral'
+      'EME'
+      'F2'
+      'Satellite'
+      'Sporadic-E'
+      'Tropo'
+    )
+    MaxLength = -1
+    OnChange = cbPropModeChange
+    Style = csDropDownList
+    TabOrder = 5
+  end
+end

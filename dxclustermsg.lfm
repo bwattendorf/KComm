@@ -1,0 +1,39 @@
+object frmClusterMsg: TfrmClusterMsg
+  Left = 318
+  Height = 300
+  Top = 149
+  Width = 600
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'DX Cluster Login Message'
+  ClientHeight = 300
+  ClientWidth = 600
+  ParentFont = False
+  Position = poDesktopCenter
+  LCLVersion = '0.9.26'
+  object btnOK: TButton
+    Left = 516
+    Height = 25
+    Top = 264
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 9
+    Height = 250
+    Top = 8
+    Width = 582
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 1
+    WordWrap = False
+  end
+end

@@ -1,0 +1,87 @@
+object frmPSKBrowser: TfrmPSKBrowser
+  Left = 3
+  Height = 384
+  Top = 167
+  Width = 340
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'PSK Browser'
+  ClientHeight = 384
+  ClientWidth = 340
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.0.2.0'
+  object sgBrowser: TStringGrid
+    Left = 0
+    Height = 340
+    Top = 0
+    Width = 340
+    ColCount = 3
+    DefaultRowHeight = 14
+    ExtendedSelect = False
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goSmoothScroll, goDontScrollPartCell]
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnClick = sgBrowserClick
+    OnDblClick = sgBrowserDblClick
+    ColWidths = (
+      66
+      60
+      211
+    )
+  end
+  object pnStatus: TPanel
+    Left = 0
+    Height = 24
+    Top = 360
+    Width = 340
+    Align = alBottom
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    BorderWidth = 2
+    ClientHeight = 24
+    ClientWidth = 340
+    TabOrder = 1
+    object StatusBar: TLabel
+      Left = 8
+      Height = 14
+      Top = 5
+      Width = 328
+      AutoSize = False
+      ParentColor = False
+    end
+  end
+  object cbPSKReporter: TCheckBox
+    Left = 8
+    Height = 17
+    Hint = 'Send spots to pskreporter.info website'
+    Top = 342
+    Width = 120
+    Caption = 'Spot to PSK Reporter'
+    OnClick = cbPSKReporterClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object cbSpotHist: TCheckBox
+    Left = 248
+    Height = 17
+    Hint = 'Show spot history'
+    Top = 342
+    Width = 73
+    Caption = 'Show spots'
+    OnClick = cbSpotHistClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+  end
+  object Timer: TTimer
+    OnTimer = TimerTimer
+    left = 194
+    top = 9
+  end
+end

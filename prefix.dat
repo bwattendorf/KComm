@@ -1,0 +1,84 @@
+Australia:                30:  59:  OC:  -35.00:  -148.17:   -10.0:  VK:
+    AX1,VH1,VI1,VJ1,VK1,VL1,VM1,VN1,VZ1;
+Australia:                30:  59:  OC:  -33.00:  -151.17:   -10.0:  VK:
+    AX2,VH2,VI2,VJ2,VK2,VL2,VM2,VN2,VZ2;
+Australia:                30:  59:  OC:  -37.75:  -144.97:   -10.0:  VK:
+    AX3,VH3,VI3,VJ3,VK3,VL3,VM3,VN3,VZ3;
+Australia:                30:  59:  OC:  -27.50:  -153.00:   -10.0:  VK:
+    AX4,VH4,VI4,VJ4,VK4,VL4,VM4,VN4,VZ4;
+Australia:                30:  59:  OC:  -34.90:  -138.60:   -10.0:  VK:
+    AX5,VH5,VI5,VJ5,VK5,VL5,VM5,VN5,VZ5;
+Australia:                30:  59:  OC:  -32.00:  -115.90:   -10.0:  VK:
+    AX6,VH6,VI6,VJ6,VK6,VL6,VM6,VN6,VZ6;
+Australia:                30:  59:  OC:  -42.90:  -147.30:   -10.0:  VK:
+    AX7,VH7,VI7,VJ7,VK7,VL7,VM7,VN7,VZ7;
+Australia:                30:  59:  OC:  -13.00:  -131.00:   -10.0:  VK:
+    AX8,VH8,VI8,VJ8,VK8,VL8,VM8,VN8,VZ8;
+Austria:                  15:  28:  EU:   48.20:   -16.30:    -1.0:  OE:
+    4U1VIC,4U50VIC;
+Brazil:                   11:  15:  SA:  -19.69:    40.84:     4.00: PY:
+    PP1,PP5,PU3,PY1,PY2,PY3,PY4,PY5,ZZ3;
+Brazil:                   11:  13:  SA:  -15.8:     47.88:     4.00: PY:
+    PT2,PU2,PP2,PP6,PP7,PQ2,PQ8,PR7,PR8,PS7,PS8,PT7,PT9,PU7,PU9,PY6,PY7,PY8,PY9;
+Brazil:                   11:  12:  SA:  -4.92:     66.06:     5.00: PY:
+    PP8,PT8,PU8,PV8,PW8;
+Canada:                   05:  09:  NA:   44.93:    64.01:    +3.0:  VE:
+    VA1,VE1;
+Canada:                   05:  04:  NA:   52.02:    73.14:    +5.0:  VE:
+    VA2,VE2;
+Canada:                   04:  04:  NA:   49.62:    85.98:    +5.0:  VE:
+    VA3,VE3;
+Canada:                   04:  03:  NA:   54.86:    98.98:    +6.0:  VE:
+    VA4,VE4;
+Canada:                   04:  02:  NA:   53.69:   107.15:    +6.0:  VE:
+    VA5,VE5;
+Canada:                   04:  02:  NA:   54.47:   115.62:    +7.0:  VE:
+    VE6,VA6;
+Canada:                   03:  02:  NA:   53.98:   125.45:    +8.0:  VE:
+    VA7,VE7;
+Canada:                   01:  02:  NA:   63.32:   120.77:    +7.0:  VE:
+    VA8,VE8;
+Canada:                   05:  09:  NA:   46.49:    66.92:    +6.0:  VE:
+    VA9;VE9;
+Canada:                   01:  02:  NA:   62.83:   137.51:    +6.0:  VE:
+    VY1;
+Canada:                   05:  09:  NA:   46.23:    63.12:    +5.0:  VE:
+    VY2;
+Canada:                   03:  02:  NA:   45.40:    75.71:    +5.0:  VE:
+    VY9;
+Canada:                   05:  09:  NA:   48.42:    56.68:    +3.5:  VE:
+    VO1;
+Canada:                   02:  09:  NA:   53.26:    63.14:    +5.0:  VE:
+    VO2;
+Italy:                    15:  28:  EU:   41.90:   -12.50:    -1.0:   I:
+    I;
+Italy:                    33:  37:  AF:   35.40:   -12.50:    -1.0: IG9:
+    IG9,IH9;
+Italy:                    15:  28:  EU:   37.50:   -14.00:    -1.0: IT9:
+    IB9,ID9,IE9,IF9,II9,IJ9,IO9,IQ9,IR9,IT,IU9,IW9,IZ9;
+Scotland:                 14:  27:  EU:   55.80:     4.30:     0.0:  GM:
+    2A,2M,2S,2T,GM,GS,MM,MS;
+Svalbard:                 40:  18:  EU:   74.50:   -19.00:    -1.0:  JW:
+    JW2FL,JW5RIA,JW7FD;
+Turkey:                   20:  39:  EU:   41.20:   -29.00:    -2.0: TA1:
+    TA1,TB1,TC1,YM1;
+United States:            05:  08:  NA:   43.81:    71.55:    +6.0:  K1:
+    AA1,AB1,AC1,AD1,AE1,AF1,AG1,AI1,AJ1,AK1,K1,N1,W1;
+United States:            05:  08:  NA:   42.71:    75.42:    +6.0:  K2:
+    AA2,AB2,AC2,AD2,AE2,AF2,AG2,AI2,AJ2,AK2,K2,N2,W2;
+United States:            05:  08:  NA:   40.72:    78.25:    +6.0:  K3:
+    AA3,AB3,AC3,AD3,AE3,AF3,AG3,AI3,AJ3,AK3,K3,N3,W3;
+United States:            04:  08:  NA:   34.27:    84.20:    +5.0:  K4:
+    AA4,AB4,AC4,AD4,AE4,AF4,AG4,AI4,AJ4,AK4,K4,N4,W4;
+United States:            04:  08:  NA:   32.65:   100.07:    +5.0:  K5:
+    AA5,AB5,AC5,AD5,AE5,AF5,AG5,AI5,AJ5,AK5,K5,N5,W5;
+United States:            03:  06:  NA:   36.00:   120.00:    +8.0:  K6:
+    AA6,AB6,AC6,AD6,AE6,AF6,AG6,AI6,AJ6,AK6,K6,N6,W6;
+United States:            03:  06:  NA:   40.44:   115.22:    +7.0:  K7:
+    AA7,AB7,AC7,AD7,AE7,AF7,AG7,AI7,AJ7,AK7,K7,N7,W7;
+United States:            04:  08:  NA:   42.00:    85.00:    +6.0:  K8:
+    AA8,AB8,AC8,AD8,AE8,AF8,AG8,AI8,AJ8,AK8,K8,N8,W8;
+United States:            04:  08:  NA:   41.00:    89.00:    +6.0:  K9:
+    AA9,AB9,AC9,AD9,AE9,AF9,AG9,AI9,AJ9,AK9,K9,N9,W9;
+United States:            04:  07:  NA:   42.71:    98.25:    +8.0:  K0:
+    AA0,AB0,AC0,AD0,AE0,AF0,AG0,AI0,AJ0,AK0,K0,N0,W0;

@@ -1,0 +1,45 @@
+object frmClusterSelect: TfrmClusterSelect
+  Left = 524
+  Height = 240
+  Top = 355
+  Width = 294
+  HorzScrollBar.Page = 293
+  VertScrollBar.Page = 239
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Select DX Cluster'
+  ClientHeight = 240
+  ClientWidth = 294
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  object lbClusterData: TListBox
+    Left = 7
+    Height = 192
+    Top = 8
+    Width = 280
+    OnClick = lbClusterDataClick
+    ParentFont = True
+    TabOrder = 0
+  end
+  object btnOK: TButton
+    Left = 126
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'OK'
+    Enabled = False
+    ModalResult = 1
+    ParentFont = True
+    TabOrder = 1
+  end
+  object btnCancel: TButton
+    Left = 212
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Cancel'
+    ModalResult = 2
+    ParentFont = True
+    TabOrder = 2
+  end
+end

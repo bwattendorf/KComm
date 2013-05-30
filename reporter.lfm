@@ -1,0 +1,126 @@
+object frmReporter: TfrmReporter
+  Left = 0
+  Height = 240
+  Top = 585
+  Width = 340
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Stations spotted'
+  ClientHeight = 240
+  ClientWidth = 340
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  LCLVersion = '1.0.2.0'
+  object pnStatus: TPanel
+    Left = 0
+    Height = 24
+    Top = 216
+    Width = 340
+    Align = alBottom
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    BorderWidth = 2
+    ClientHeight = 24
+    ClientWidth = 340
+    TabOrder = 0
+    object btnShowSpot: TSpeedButton
+      Left = 320
+      Height = 16
+      Hint = 'Show PSK Reporter website'
+      Top = 4
+      Width = 16
+      Flat = True
+      Glyph.Data = {
+        3E020000424D3E0200000000000036000000280000000D0000000D0000000100
+        18000000000008020000130B0000130B00000000000000000000E9EFF2E9EFF2
+        E9EFF2E9EFF2E9EFF2E9EFF2B2B5B7E9EFF2E9EFF2E9EFF2E9EFF2E9EFF2E9EF
+        F265E9EFF2E9EFF2E9EFF2E9EFF2E9EFF2E9EFF2363636E9EFF2E9EFF2E9EFF2
+        E9EFF2E9EFF2E9EFF265E9EFF2E9EFF2E9EFF2E9EFF2E9EFF2E9EFF2212121E9
+        EFF2E9EFF2E9EFF2E9EFF2E9EFF2E9EFF265E9EFF2E9EFF27E8385CEDBE2E9EF
+        F2E9EFF2020202CDD2D4E9EFF2E9EFF2AFB4B6E9EFF2E9EFF265E9EFF2E9EFF2
+        2F2F2E536B77E9EFF2343434591F1F666767E9EFF2585A5B808385E9EFF2E9EF
+        F265E9EFF2E9EFF2CCD2D47C878DB4B7B82E1414F656563617178F91927E8182
+        E9EFF2E9EFF2E9EFF265E9EFF2E9EFF2E9EFF2E9EFF223252CB94141802D2DCC
+        4747271B1B919496E9EFF2E9EFF2E9EFF265E9EFF2B6BBBD838688A2A6A8812D
+        2D260D0DE65050C04343852F2F909394818485B9BDC0E9EFF265E9EFF2BFC4C6
+        8487889EA2A48A3030501C1C6B2626802D2D8E3232949799757879AFB4B6E9EF
+        F265E9EFF2E9EFF2E9EFF2D8E0E12B2124B64040802D2DCC48482B1F22C7CCCE
+        E9EFF2E9EFF2E9EFF265E9EFF2E9EFF2D2D7D9D9DFE2C8CDCE4A494A432D2D44
+        464ABCC9CFE9EFF2E9EFF2E9EFF2E9EFF265E9EFF2E9EFF2333435B6BCBFE9EF
+        F2E9EFF27D8082E9EFF2E9EFF2171818E9EFF2E9EFF2E9EFF265E9EFF2CCD1D3
+        A1A5A7E9EFF2E9EFF2E9EFF2141516E9EFF2E9EFF2AFB4B6B8BCBEE9EFF2E9EF
+        F265
+      }
+      NumGlyphs = 0
+      OnClick = btnShowSpotClick
+      ShowCaption = False
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object lbStatus: TLabel
+      Left = 9
+      Height = 1
+      Top = 4
+      Width = 1
+      ParentColor = False
+    end
+  end
+  object lbSpots: TListBox
+    Left = 0
+    Height = 216
+    Top = 0
+    Width = 340
+    ExtendedSelect = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    IntegralHeight = True
+    ItemHeight = 0
+    MultiSelect = True
+    ParentFont = False
+    PopupMenu = HistPopupMenu
+    TabOrder = 1
+  end
+  object HistPopupMenu: TPopupMenu
+    left = 280
+    top = 8
+    object mnuSaveToFile: TMenuItem
+      Caption = 'Save to file...'
+      OnClick = mnuSaveToFileClick
+    end
+    object MenuItem1: TMenuItem
+      Caption = '-'
+    end
+    object mnuCopy: TMenuItem
+      Caption = 'Copy'
+      OnClick = mnuCopyClick
+    end
+    object MenuItem2: TMenuItem
+      Caption = '-'
+    end
+    object mnuSelectAll: TMenuItem
+      Caption = 'Select All'
+      OnClick = mnuSelectAllClick
+    end
+  end
+  object SaveHistoryDialog: TSaveDialog
+    DefaultExt = '.txt'
+    Filter = 'Text file (*.txt)|*.txt|All files (*.*)|*.*'
+    FilterIndex = 0
+    Options = [ofViewDetail]
+    left = 280
+    top = 56
+  end
+  object Timer: TTimer
+    Enabled = False
+    Interval = 5000
+    OnTimer = TimerTimer
+    left = 280
+    top = 112
+  end
+end

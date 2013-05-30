@@ -1,0 +1,28 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmPSKBrowser','FORMDATA',[
+  'TPF0'#14'TfrmPSKBrowser'#13'frmPSKBrowser'#4'Left'#2#3#6'Height'#3#128#1#3'T'
+  +'op'#3#167#0#5'Width'#3'T'#1#11'BorderIcons'#11#12'biSystemMenu'#0#11'Border'
+  +'Style'#7#8'bsDialog'#7'Caption'#6#11'PSK Browser'#12'ClientHeight'#3#128#1
+  +#11'ClientWidth'#3'T'#1#7'OnClose'#7#9'FormClose'#8'OnCreate'#7#10'FormCreat'
+  +'e'#6'OnShow'#7#8'FormShow'#10'LCLVersion'#6#7'1.0.2.0'#0#11'TStringGrid'#9
+  +'sgBrowser'#4'Left'#2#0#6'Height'#3'T'#1#3'Top'#2#0#5'Width'#3'T'#1#8'ColCou'
+  +'nt'#2#3#16'DefaultRowHeight'#2#14#14'ExtendedSelect'#8#9'FixedCols'#2#0#9'F'
+  +'ixedRows'#2#0#7'Options'#11#15'goFixedVertLine'#15'goFixedHorzLine'#10'goVe'
+  +'rtLine'#10'goHorzLine'#14'goSmoothScroll'#20'goDontScrollPartCell'#0#8'RowC'
+  +'ount'#2#1#10'ScrollBars'#7#6'ssNone'#8'TabOrder'#2#0#7'OnClick'#7#14'sgBrow'
+  +'serClick'#10'OnDblClick'#7#17'sgBrowserDblClick'#9'ColWidths'#1#2'B'#2'<'#3
+  +#211#0#0#0#0#6'TPanel'#8'pnStatus'#4'Left'#2#0#6'Height'#2#24#3'Top'#3'h'#1#5
+  +'Width'#3'T'#1#5'Align'#7#8'alBottom'#10'BevelInner'#7#9'bvLowered'#10'Bevel'
+  +'Outer'#7#6'bvNone'#11'BorderWidth'#2#2#12'ClientHeight'#2#24#11'ClientWidth'
+  +#3'T'#1#8'TabOrder'#2#1#0#6'TLabel'#9'StatusBar'#4'Left'#2#8#6'Height'#2#14#3
+  +'Top'#2#5#5'Width'#3'H'#1#8'AutoSize'#8#11'ParentColor'#8#0#0#0#9'TCheckBox'
+  +#13'cbPSKReporter'#4'Left'#2#8#6'Height'#2#17#4'Hint'#6'&Send spots to pskre'
+  +'porter.info website'#3'Top'#3'V'#1#5'Width'#2'x'#7'Caption'#6#20'Spot to PS'
+  +'K Reporter'#7'OnClick'#7#18'cbPSKReporterClick'#14'ParentShowHint'#8#8'Show'
+  +'Hint'#9#8'TabOrder'#2#2#0#0#9'TCheckBox'#10'cbSpotHist'#4'Left'#3#248#0#6'H'
+  +'eight'#2#17#4'Hint'#6#17'Show spot history'#3'Top'#3'V'#1#5'Width'#2'I'#7'C'
+  +'aption'#6#10'Show spots'#7'OnClick'#7#15'cbSpotHistClick'#14'ParentShowHint'
+  +#8#8'ShowHint'#9#8'TabOrder'#2#3#0#0#6'TTimer'#5'Timer'#7'OnTimer'#7#10'Time'
+  +'rTimer'#4'left'#3#194#0#3'top'#2#9#0#0#0
+]);

@@ -1,0 +1,16 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmClusterSelect','FORMDATA',[
+  'TPF0'#17'TfrmClusterSelect'#16'frmClusterSelect'#4'Left'#3#12#2#6'Height'#3
+  +#240#0#3'Top'#3'c'#1#5'Width'#3'&'#1#18'HorzScrollBar.Page'#3'%'#1#18'VertSc'
+  +'rollBar.Page'#3#239#0#11'BorderIcons'#11#12'biSystemMenu'#0#11'BorderStyle'
+  +#7#8'bsDialog'#7'Caption'#6#17'Select DX Cluster'#12'ClientHeight'#3#240#0#11
+  +'ClientWidth'#3'&'#1#6'OnShow'#7#8'FormShow'#8'Position'#7#17'poOwnerFormCen'
+  +'ter'#0#8'TListBox'#13'lbClusterData'#4'Left'#2#7#6'Height'#3#192#0#3'Top'#2
+  +#8#5'Width'#3#24#1#7'OnClick'#7#18'lbClusterDataClick'#10'ParentFont'#9#8'Ta'
+  +'bOrder'#2#0#0#0#7'TButton'#5'btnOK'#4'Left'#2'~'#6'Height'#2#25#3'Top'#3#208
+  +#0#5'Width'#2'K'#7'Caption'#6#2'OK'#7'Enabled'#8#11'ModalResult'#2#1#10'Pare'
+  +'ntFont'#9#8'TabOrder'#2#1#0#0#7'TButton'#9'btnCancel'#4'Left'#3#212#0#6'Hei'
+  +'ght'#2#25#3'Top'#3#208#0#5'Width'#2'K'#7'Caption'#6#6'Cancel'#11'ModalResul'
+  +'t'#2#2#10'ParentFont'#9#8'TabOrder'#2#2#0#0#0
+]);
